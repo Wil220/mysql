@@ -43,3 +43,7 @@ SELECT * FROM tb_cursos WHERE nome_curso LIKE '%J%';
 SELECT nome_curso, descricao_curso, valor, carga_horaria, tb_categorias.nome_categoria, tb_categorias.descricao_categoria FROM 
 tb_cursos INNER JOIN tb_categorias 
 ON tb_cursos.id_categoria=tb_categorias.id_categoria;
+
+SELECT nome_curso, descricao_curso, valor, carga_horaria, tb_categorias.nome_categoria, tb_categorias.descricao_categoria FROM 
+tb_cursos INNER JOIN tb_categorias 
+ON tb_cursos.id_categoria=tb_categorias.id_categoria WHERE descricao_categoria = "Cursos voltados para áreas de TI e desenvolvimento";
