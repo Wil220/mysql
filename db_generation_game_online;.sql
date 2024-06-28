@@ -51,3 +51,6 @@ tb_personagens INNER JOIN tb_classes
 ON tb_personagens.id_classe=tb_classes.id_classe;
  
 
+SELECT  nome, poder_ataque, poder_defesa, nivel, tb_classes.nome_classe, tb_classes.descricao FROM
+tb_personagens INNER JOIN tb_classes
+ON tb_personagens.id_classe=tb_classes.id_classe  WHERE  descricao = "Personagem com poderes divinos e imortais";
